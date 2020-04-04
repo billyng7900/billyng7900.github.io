@@ -1,0 +1,233 @@
+/* css Zen Garden submission - 'Sakura', by Tatsuya Uchida, http://www.re-bloom.com/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2006, Tatsuya Uchida */
+
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+
+/* /////////////// basic elements /////////////// */
+
+body {
+margin:0;
+padding:0;
+font:75%/1.4 verdana,Helvetica,sans-serif;
+background-image:url(http://www.csszengarden.com/208/body_bg.gif);
+text-align:center;
+}
+
+h1,h2 {
+display:none;
+}
+
+h3 {
+height:38px;
+margin:0;
+padding:0;
+
+text-indent: 100%;
+white-space: nowrap;
+overflow: hidden;
+}
+
+p {margin:0;padding:0;}
+
+abbr {
+border:none;
+}
+
+a {
+color:#D9189F;
+background-color:#ffffff;
+text-decoration:underline;
+}
+
+a:hover, a:hover {
+color:#FC7AD5;
+background-color:#ffffff;
+}
+
+
+/* ////////////// layout ///////////////// */
+
+
+.page-wrapper {
+width:800px;
+background:url(http://www.csszengarden.com/208/bg.gif) repeat-x #dfdfdf;
+color:#454545;
+}
+
+header {
+width:772px;
+height:178px;
+background:url(http://www.csszengarden.com/208/top.jpg);
+}
+
+.summary, .preamble, .explanation, .participation, .benefits, .requirements {
+width:546px;
+background-repeat:repeat-y;
+color:#454545;
+display:block;padding:0;
+}
+
+.wrapper {
+width:207px;
+}
+
+.summary p, .explanation p, .benefits p {
+padding:0 15px 10px 77px;
+}
+
+.preamble p, .participation p, .requirements p {
+padding:0 85px 10px 17px;
+}
+
+.requirements p:nth-child(6) {
+padding:0 85px 10px 17px;
+}
+
+.sidebar li {
+padding:6px 0 10px 0;
+}
+
+.sidebar li a {
+padding-left:7px;
+background:url(http://www.csszengarden.com/208/link.gif) left center no-repeat;
+text-decoration:none;
+}
+
+.sidebar li a:hover {
+text-decoration:underline;
+}
+
+.summary p:first-child {
+padding-top:14px;
+background:
+	url(http://www.csszengarden.com/208/quicksummary_top.gif) top no-repeat,
+	url(http://www.csszengarden.com/208/right_bg.gif) right repeat-y;
+}
+
+.summary p:last-child {
+padding-bottom:20px;
+background:
+	url(http://www.csszengarden.com/208/right_bottom.gif) bottom no-repeat,
+	url(http://www.csszengarden.com/208/right_bg.gif) right repeat-y;
+}
+
+.design-selection li a {
+display:block;
+font-weight:bold;
+background-position:0 0.6em;
+}
+
+.design-selection a.designer-name {
+display:inline;
+color:#666666;
+padding:0;
+background:none;
+background-color:#ffffff;
+}
+
+footer a{
+text-decoration: none;
+background-color:#dfdfdf;
+border:1px solid #bdbdbd;
+height:100%;
+}
+
+footer a:hover{
+background-color:#ebebeb;
+color:#777777;
+}
+
+.extra1, .extra2, .extra3, .extra4, .extra5, .extra6{display:none;}
+
+
+/* ///////////// background image ////////////// */
+
+.summary p:first-child {
+padding-top:14px;
+position: relative;
+background:url(http://www.csszengarden.com/208/quicksummary_top.gif) top no-repeat;
+}
+
+.summary p:last-child {
+padding-bottom:20px;
+}
+
+/* right image */
+.summary p, .explanation p , .benefits p {
+background:url(http://www.csszengarden.com/208/right_bg.gif) right repeat-y;
+}
+.design-selection, .design-archives, .zen-resources {
+background:url(http://www.csszengarden.com/208/left_bg.gif) repeat-y;
+}
+
+/* side image */
+.summary {background-image:url(http://www.csszengarden.com/208/img_quicksummary.jpg);background-position:left bottom;}
+.preamble {background-image:url(http://www.csszengarden.com/208/img_preamble.jpg);background-position:right bottom;}
+.explanation {background-image:url(http://www.csszengarden.com/208/img_explanation.jpg);background-position:left bottom;}
+.participation {background-image:url(http://www.csszengarden.com/208/img_participation.jpg);background-position:right bottom;}
+.benefits {background-image:url(http://www.csszengarden.com/208/img_benefits.jpg);background-position:left bottom;}
+.requirements {background-image:url(http://www.csszengarden.com/208/img_requirements.jpg);background-position:right bottom;}
+
+.preamble p:last-child, .main p:last-child {
+	padding-bottom: 25px;
+}
+
+/* h3 image */
+.preamble h3 {background:url(http://www.csszengarden.com/208/title_preamble.gif) no-repeat;}
+.explanation h3 {background:url(http://www.csszengarden.com/208/title_explanation.gif) no-repeat;}
+.participation h3 {background:url(http://www.csszengarden.com/208/title_participation.gif) no-repeat;}
+.benefits h3 {background:url(http://www.csszengarden.com/208/title_benefits.gif) no-repeat;}
+.requirements h3 {background:url(http://www.csszengarden.com/208/title_requirements.gif) no-repeat;}
+.design-selection h3 {background:url(http://www.csszengarden.com/208/title_select.gif) no-repeat;}
+.design-archives h3 {background:url(http://www.csszengarden.com/208/title_archives.gif) no-repeat;}
+.zen-resources h3 {background:url(http://www.csszengarden.com/208/title_resources.gif) no-repeat;}
+
+/* bottom image */
+.summary p:last-child, .preamble p:nth-child(4), .explanation p:nth-child(3), .participation p:nth-child(4), .benefits p:nth-child(2), .requirements p:nth-child(6) {
+position: relative;
+padding-bottom: 20px;
+}
+
+.summary p:first-child:before {
+content: ' ';
+display: block;
+position: absolute;
+top: 20px;
+bottom: 0;
+right: 0;
+width:20px;
+background:url(http://www.csszengarden.com/208/right_bg.gif) right repeat-y;
+}
+.summary p:last-child:after, .preamble p:nth-child(4):after, .explanation p:nth-child(3):after, .participation p:nth-child(4):after, .benefits p:nth-child(2):after, .requirements p:nth-child(6):after {
+content: ' ';
+display: block;
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+height:20px;
+
+background:url(http://www.csszengarden.com/208/right_bottom.gif) bottom no-repeat;
+width: 100%;
+height: 20px;
+margin-top: -20px;
+}
+
+.design-selection ul, .design-archives ul, .zen-resources ul{
+margin:0;
+padding:0 25px 20px 17px;
+background:url(http://www.csszengarden.com/208/left_bottom.gif) bottom no-repeat;
+}
+
+/*
+.design-selection, .design-archives, .zen-resources {
+margin:0 0 2px 0;
+}
+
+*/
